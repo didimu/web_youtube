@@ -61,8 +61,7 @@
         }
     }
 
-    .keyword{
-        border-bottom:1px solid var(--black100);
+    .keyword{ 
         padding:1.25rem;
         li{
             display:inline-block;
@@ -89,7 +88,8 @@
 }
 
 .header__sns{
-    position:absolute;
+    position:fixed;
+    width:260px;
     bottom:0;
     left:0;
     right:0;

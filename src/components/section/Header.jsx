@@ -15,8 +15,7 @@ const Header = () => {
         <header id='header' role='banner'>
            <Logo />
            <Menu />
-           <Sns />
-          
+           <Sns />          
         </header>
     )
 }
