@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Today = () => {
   return (
     <section id='today'>
-       <div className='today_inner'>
+       <div className='today__inner'>
           <div className='today__thumb'>
             <Link to={todayText[0].page}>
              <img src={todayText[0].img} alt={todayText[0].title} /> 
