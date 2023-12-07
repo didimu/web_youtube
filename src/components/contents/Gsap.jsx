@@ -1,8 +1,30 @@
-import React from 'react'
+import React from 'react' 
+import { Link } from 'react-router-dom'
+import { gsapText } from '../../data/gsap'
 
 const gsap = () => {
-  return (
-    <div>gsap</div>
+  return ( 
+    <section id='gsap'>
+      <h2>🤓 GSAP 패럴랙스 효과를 하고 싶다면!</h2>
+      <div className='video__inner'>
+
+
+        {gsapText.map((video, key) => (
+
+          <div className='video' key={key}>
+            <div className='video__thumb play_icon'>
+              <Link to={'/video/${video.videoId}'}>
+                <img src={video.img} alt={video.title} />
+              </Link>
+            </div>
+          </div>
+
+        ))}
+
+        
+
+      </div>
+    </section>
   )
 }
 
